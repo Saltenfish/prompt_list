@@ -172,12 +172,23 @@ const CSS=`
 }
 .fc-input button:hover{background:var(--c1-deep,#5F7DB5)}
 
-/* 手機：按鈕組沿用桌機定位（與 🧺 完全對齊），只改聊天視窗 */
+/* 手機：聊天視窗改為全高側欄，從左滑入（對稱抽屜從右） */
 @media(max-width:760px){
   #fishchat{
-    right:8px;left:8px;width:auto;
-    bottom:184px;
-    height:min(420px,calc(100vh - 230px));
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    width:100%;height:100%;
+    border-radius:0;
+    border:none;
+    transform:translateX(-105%);
+    transition:transform .28s cubic-bezier(.3,.8,.3,1);
+    opacity:1;
+    z-index:48;
+  }
+  #fishchat.show{
+    transform:translateX(0);
+    opacity:1;
+    pointer-events:auto;
   }
 }
 `;
