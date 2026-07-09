@@ -172,15 +172,12 @@ const CSS=`
 }
 .fc-input button:hover{background:var(--c1-deep,#5F7DB5)}
 
-/* 手機 */
+/* 手機：按鈕組沿用桌機定位（與 🧺 完全對齊），只改聊天視窗 */
 @media(max-width:760px){
-  #fishtoggle{right:16px;bottom:78px;width:52px}
-  #fishtoggle.open{bottom:140px}
-  #fishfab{right:16px;bottom:88px;width:52px;height:52px;font-size:22px}
   #fishchat{
     right:8px;left:8px;width:auto;
-    bottom:176px;
-    height:min(440px,calc(100vh - 210px));
+    bottom:184px;
+    height:min(420px,calc(100vh - 230px));
   }
 }
 `;
