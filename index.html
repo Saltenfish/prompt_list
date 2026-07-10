@@ -579,10 +579,14 @@ function renderList(){
    捲動到視窗附近才嘗試載圖；副檔名逐一嘗試，
    結果（含「確認無圖」）快取於 IMG_CACHE，重新渲染不再重發請求 */
 const IMG_CACHE=Object.create(null); /* code → url字串 或 null(確認無圖) */
+/* 注意：.thumb 預設 display:none，隱藏元素不會觸發 IntersectionObserver，
+   因此觀察對象是「可見的卡片」，進入視窗後再載入卡片內的縮圖 */
 const thumbIO=("IntersectionObserver" in window)?new IntersectionObserver(ens=>{
   ens.forEach(en=>{
     if(!en.isIntersecting)return;
-    thumbIO.unobserve(en.target);loadThumb(en.target);
+    thumbIO.unobserve(en.target);
+    const img=en.target.querySelector(".thumb");
+    if(img)loadThumb(img);
   });
 },{rootMargin:"400px 0px"}):null;
 function hydrateThumbs(){
@@ -590,7 +594,7 @@ function hydrateThumbs(){
     const v=IMG_CACHE[img.dataset.code];
     if(v===null)return;                                  /* 已知無圖 */
     if(typeof v==="string"){img.src=v;img.classList.add("loaded");return}
-    if(thumbIO)thumbIO.observe(img);else loadThumb(img);
+    if(thumbIO)thumbIO.observe(img.closest(".card")||img);else loadThumb(img);
   });
 }
 function loadThumb(img,i){
