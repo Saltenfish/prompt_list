@@ -167,6 +167,7 @@ main{flex:1;min-width:0}
   border:1px solid var(--line);cursor:zoom-in;display:none;
 }
 .thumb.loaded{display:block}
+.card h3 .ko{font-size:.78em;font-weight:400;opacity:.55;margin-left:.35em}
 .note{margin-top:7px;font-size:12px;color:var(--muted);line-height:1.5}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:52px 0;font-size:14px}
 
@@ -543,7 +544,7 @@ function filtered(){
     if(state.group==="fav"&&!state.fav.has(it.id))return false;
     if(state.group!=="all"&&state.group!=="fav"&&CATS[it.c].g!==state.group)return false;
     if(state.cat&&it.c!==state.cat)return false;
-    if(q&&!(it.t.toLowerCase().includes(q)||it.p.toLowerCase().includes(q)||(it.n||"").toLowerCase().includes(q)))return false;
+    if(q&&!(it.t.toLowerCase().includes(q)||(it.k||"").toLowerCase().includes(q)||it.p.toLowerCase().includes(q)||(it.n||"").toLowerCase().includes(q)))return false;
     return true;
   });
 }
@@ -558,7 +559,7 @@ function renderList(){
     return `<div class="card" data-id="${it.id}">
       <div class="hd">
         <span class="dot" style="background:var(${c.d})"></span>
-        <h3>${esc(it.t)}</h3>
+        <h3>${esc(it.t)}${it.k?' <span class="ko">'+esc(it.k)+'</span>':""}</h3>
         ${it.custom?`<span class="badge-custom">自訂</span>`:""}
         <span class="catlab">${c.l}</span>
         ${it.custom?`<button class="iconbtn" data-act="del" title="刪除">🗑</button>`:""}
