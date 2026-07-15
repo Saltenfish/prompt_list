@@ -6,7 +6,7 @@
    本檔分類：camera=鏡頭構圖(前綴V)
 ============================================================ */
 window.PROMPT_DATA.push(
-/* ---- 鏡頭構圖（camera｜V1–V33，新增從 V34 續編）---- */
+/* ---- 鏡頭構圖（camera｜V1–V34，新增從 V35 續編）---- */
 {c:"camera",t:"V1 全身",k:"전신샷",p:"full body"},
 {c:"camera",t:"V2 七分身",k:"카우보이샷(7부)",p:"cowboy shot"},
 {c:"camera",t:"V3 上半身",k:"상반신샷",p:"upper body"},
@@ -39,5 +39,6 @@ window.PROMPT_DATA.push(
 {c:"camera",t:"V30 窗外向內窺",k:"창밖에서 들여다보기",p:"from outside the window looking in, framed by window edges, glass reflection layer, voyeur-free cozy framing"},
 {c:"camera",t:"V31 低水平線構圖",k:"낮은 수평선 구도",p:"low horizon line, vast sky dominating frame, subject anchored near the bottom edge"},
 {c:"camera",t:"V32 動態戲劇鏡頭",k:"다이나믹 드라마틱 앵글",p:"dynamic angle, dramatic angle, sweeping motion composition, energetic cinematic tension"},
-{c:"camera",t:"V33 大氣透視遠景",k:"대기원근 원경",p:"atmospheric perspective, distant layers fading into haze, depth built by air and mist, vast scale"}
+{c:"camera",t:"V33 大氣透視遠景",k:"대기원근 원경",p:"atmospheric perspective, distant layers fading into haze, depth built by air and mist, vast scale"},
+{c:"camera",t:"V34 消點透視加魚眼",k:"소실점 어안 광각",p:"inside, one-point perspective, vanishing point, wide shot, fisheye, symmetry, straight-on, centered symmetrical framing, cinematic angle, vaporwave aesthetic",n:"消失點＋魚眼混用；負面詞建議：upside down, multiple views, wrong proportions"},
 );

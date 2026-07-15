@@ -6,7 +6,7 @@
    本檔分類：location=地點(前綴L) element=元素(前綴E) palette=配色盤(前綴PL) lighting=光線(前綴LT)
 ============================================================ */
 window.PROMPT_DATA.push(
-/* ---- 地點（location｜L1–L97，新增從 L98 續編）---- */
+/* ---- 地點（location｜L1–L98，新增從 L99 續編）---- */
 {c:"location",t:"L1 櫻花公園",k:"벚꽃 공원",p:"outdoors, spring cherry blossom park, sakura trees in full bloom, pink petals falling, petals floating in wind, stone pathway, wooden bench under tree, soft sunlight through branches, petals scattered on ground, dreamy pink atmosphere, gentle spring breeze"},
 {c:"location",t:"L2 雨夜霓虹街道",k:"비 내리는 네온거리",p:"outdoors, night, rainy city street, neon signs glowing, wet asphalt reflections, colorful neon reflections on puddles, rain droplets, glowing storefronts, umbrella stands, misty atmosphere, cyberpunk city vibes, cinematic urban night"},
 {c:"location",t:"L3 歐式古典圖書館",k:"유럽풍 고전 도서관",p:"indoors, grand victorian library, towering bookshelves, spiral wooden staircase, stained glass windows, warm golden light beams, floating dust particles, antique reading desk, brass lamps, leather-bound books, scholarly cozy atmosphere"},
@@ -104,6 +104,7 @@ window.PROMPT_DATA.push(
 {c:"location",t:"L95 山巔古城堡",k:"산꼭대기 고성",p:"outdoors, grand medieval castle on a hill, tall stone towers and banners, winding approach road, dramatic cloud backdrop, distant epic scale"},
 {c:"location",t:"L96 機場航廈",k:"공항 터미널",p:"indoors, airport terminal, vast glass curtain walls, departure boards glowing, rolling suitcases, planes visible on the tarmac, travel anticipation"},
 {c:"location",t:"L97 頂樓陽台晨光",k:"아침 옥상 발코니",p:"outdoors, apartment rooftop balcony at morning, potted plants railing, hanging laundry lines, fresh pale sunrise over the city, coffee steam in cool air"},
+{c:"location",t:"L98 蔓草地鐵廂",k:"덩굴 지하철 칸",p:"indoors, inside train interior, empty car, public transport interior, mint color empty seat, dark orange walls with metallic texture, silver subway handrail, stanchion, hand grip, overgrown meadow on aisle, full of green grass, flowers, dark purple sky outside window, pink clouds, black palm trees",n:"負面詞建議：reflective floor；搭配 V34 消點透視"},
 /* ---- 元素（element｜E1–E38，新增從 E39 續編）---- */
 {c:"element",t:"E1 蝴蝶系",k:"나비",p:"colorful butterflies flying, blue morpho butterfly, white butterflies, glowing butterfly wings, butterflies landing on hair, butterfly swarm trail",n:"分支：golden butterflies（金蝶）｜crystal butterflies（水晶蝶）｜black butterflies（黑蝶暗黑向）"},
 {c:"element",t:"E2 花瓣飄落系",k:"흩날리는 꽃잎",p:"falling petals, cherry blossom petals drifting, rose petals scattered in air, petals swirling in wind, petals on ground, petal storm",n:"分支：red rose petals（紅玫瑰）｜white petals（純白）｜golden ginkgo leaves（銀杏）｜autumn maple leaves（楓葉）"},

@@ -6,7 +6,7 @@
    本檔分類：outfit_m=男套裝(前綴M) outfit_f=女套裝(前綴F) outfit_u=中性套裝(前綴U) top_m=男上裝(前綴MT) bottom_m=男下裝(前綴MB) top_f=女上裝(前綴FT) bottom_f=女下裝(前綴FB) accessory=飾品(前綴A)
 ============================================================ */
 window.PROMPT_DATA.push(
-/* ---- 男套裝（outfit_m｜M1–M61，新增從 M62 續編）---- */
+/* ---- 男套裝（outfit_m｜M1–M62，新增從 M63 續編）---- */
 {c:"outfit_m",t:"M1 韓系霸總西裝",k:"한국식 재벌 수트",p:"black tailored three-piece suit, crisp white dress shirt, silk necktie, silver tie clip, luxury wristwatch, polished leather shoes, cufflinks, slicked back styling, elegant CEO attire, fitted blazer"},
 {c:"outfit_m",t:"M2 街頭潮流",k:"스트릿 패션",p:"oversized graphic hoodie, layered longline tee, cargo pants with straps, chunky high-top sneakers, crossbody bag, silver chain necklace, snapback cap, ear piercings, layered bracelets, streetwear aesthetic"},
 {c:"outfit_m",t:"M3 黑暗奇幻騎士",k:"다크 판타지 기사",p:"black ornate plate armor, silver engraved pauldrons, tattered dark cape, leather gauntlets, chainmail underlayer, sword sheath at hip, glowing rune details, high collar armor, battle-worn texture, dark knight attire"},
@@ -68,6 +68,7 @@ window.PROMPT_DATA.push(
 {c:"outfit_m",t:"M59 黑砲衣服飾",k:"블랙 카속 복식",p:"close-fitting dark outfit, black leather overalls, leather bib overalls, single strap design",n:"搭配 P84 樓梯坐姿"},
 {c:"outfit_m",t:"M60 輕盈麻布夏裝",k:"가벼운 리넨 여름옷",p:"ivory linen short sleeve dress shirt, loose fit, lightweight fabric, navy blue shorts above knee length, beach casual style, summer outfit",n:"搭配 L43 夏日海邊日落"},
 {c:"outfit_m",t:"M61 新中式唐裝",k:"모던 탕좡 차이나룩",p:"tangzhuang jacket, mandarin collar, knotted frog buttons, subtle brocade pattern fabric, tailored modern chinese fit, cloth shoes, composed refined presence"},
+{c:"outfit_m",t:"M62 哥德王子禮裝",k:"고딕 오지 드레스 유니폼",p:"{{military dress uniform}}, gothic fashion, ouji fashion, military inspired gothic ouji outfit, black formal coat, black breeches, black half gloves, green trim, purple trim, structured silhouette, dark aristocratic aesthetic",n:"ouji（王子蘿莉塔）中性穿著；可搭配 R4 惡魔角翅或 R14"},
 /* ---- 女套裝（outfit_f｜F1–F103，新增從 F104 續編）---- */
 {c:"outfit_f",t:"F1 水晶晚禮服",k:"크리스탈 이브닝드레스",p:"crystal-embellished evening gown, off-shoulder neckline, flowing chiffon train, glittering bodice, long silk gloves, diamond earrings, delicate necklace, high heels, sparkling fabric, red carpet elegance"},
 {c:"outfit_f",t:"F2 Y2K 辣妹",k:"Y2K 갸루",p:"cropped baby tee, oversized track jacket, low-rise cargo skirt, leg warmers, chunky platform boots, studded belt, butterfly hair clips, ribbon choker, layered silver chains, tinted sunglasses, y2k fashion"},
@@ -266,7 +267,7 @@ window.PROMPT_DATA.push(
 {c:"bottom_m",t:"MB38 麂皮直筒褲",k:"스웨이드 팬츠",p:"tan suede trousers, soft napped texture, western warmth"},
 {c:"bottom_m",t:"MB39 深灰法蘭絨褲",k:"차콜 플란넬 슬랙스",p:"charcoal flannel trousers, brushed wool texture, understated classic"},
 {c:"bottom_m",t:"MB40 綁帶忍者褲",k:"닌자 랩팬츠",p:"dark wrapped ninja pants, leg bindings, tucked silhouette, agile eastern style"},
-/* ---- 女上裝（top_f｜FT1–FT40，新增從 FT41 續編）---- */
+/* ---- 女上裝（top_f｜FT1–FT41，新增從 FT42 續編）---- */
 {c:"top_f",t:"FT1 白色一字領上衣",k:"화이트 보트넥 톱",p:"white off-shoulder blouse, ruffled neckline"},
 {c:"top_f",t:"FT2 短版針織毛衣",k:"크롭 니트",p:"cropped knit sweater, ribbed texture, slightly oversized"},
 {c:"top_f",t:"FT3 黑色馬甲上衣",k:"블랙 뷔스티에 톱",p:"black corset top, lace-up front, structured boning"},
@@ -307,6 +308,7 @@ window.PROMPT_DATA.push(
 {c:"top_f",t:"FT38 紅白條紋長袖",k:"스트라이프 롱슬리브 티",p:"red and white striped long sleeve tee, snug casual fit, retro french mood"},
 {c:"top_f",t:"FT39 田園燈籠袖上衣",k:"코티지코어 퍼프 블라우스",p:"cottagecore blouse, square neckline, puffed bishop sleeves, smocked bodice, floral embroidery"},
 {c:"top_f",t:"FT40 亮片派對上衣",k:"시퀸 파티 톱",p:"sparkling sequin top, shimmering under light, sleeveless, festive night out"},
+{c:"top_f",t:"FT41 深青像素連帽衫",k:"다크 청록 픽셀 후디",p:"dark turquoise cropped hoodie, hood down, light pink pixel heart logo print, midriff, cropped silhouette",n:"搭配 FB4 丹寧短褲｜FB11 格紋短褲；鞋襪另建條目"},
 /* ---- 女下裝（bottom_f｜FB1–FB40，新增從 FB41續編）---- */
 {c:"bottom_f",t:"FB1 高腰百褶中裙",k:"하이웨스트 플리츠 스커트",p:"high-waisted pleated midi skirt, flowing drape"},
 {c:"bottom_f",t:"FB2 皮革迷你裙",k:"레더 미니스커트",p:"black leather mini skirt, silver zipper detail"},
