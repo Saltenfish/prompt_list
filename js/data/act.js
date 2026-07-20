@@ -33,7 +33,7 @@ window.PROMPT_DATA.push(
 {c:"expression",t:"X24 傲慢嘴角",k:"오만한 입꼬리",p:"(intense backlighting:1.2), chin up, arrogant, disdainful, looking down, dangerous smile, moody"},
 {c:"expression",t:"X25 眼皮半閉挑釁",k:"반쯤 감은 도발",p:"seductive smirk, heavy-lidded eyes, looking at viewer, decadent aura, confident subtle smirk, relaxed and confident expression"},
 {c:"expression",t:"X26 幸福微笑閉眼",k:"행복한 눈감은 미소",p:"gentle smile, soft blush, looking at viewer, warm playful smile, inviting expression, relaxed posture, eye contact"},
-{c:"expression",t:"X27 傻笑露牙",k:"이 드러낸 헤벌쭉",p:"(intense expression:1.2), open mouth, teeth, saliva, v-shape eyebrows"},
+{c:"expression",t:"X27 生氣怒吼",k:"분노에 찬 포효",p:"(intense expression:1.2), open mouth, teeth, saliva, v-shape eyebrows"},
 {c:"expression",t:"X28 無表情偶然",k:"인형같은 무표정",p:"emotionless expression, neutral face, (slightly lowered gaze:1.3), looking down at viewer, (faintly bored and indifferent:1.2), no facial tension, (heavy decadent aura:1.2)"},
 {c:"expression",t:"X29 咬嘴唇挑逗",k:"입술 깨물기",p:"slight smirk, lips parted, finger on lower lip, one hand touching lip, head tilted, relaxed posture"},
 {c:"expression",t:"X30 噘嘴委屈",k:"서운한 입삐죽",p:"pout, expressionless, head tilt, uneven eyes, downturned mouth, soft vulnerable expression"},
