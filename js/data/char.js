@@ -14,7 +14,7 @@ window.PROMPT_DATA.push(
 {c:"hair",t:"H5 內彎鮑伯",k:"C컬 보브",p:"short bob, inward curled ends"},
 {c:"hair",t:"H6 長波浪捲",k:"롱 웨이브",p:"long wavy hair, romantic loose curls"},
 {c:"hair",t:"H7 凌亂丸子頭",k:"루즈 번헤어",p:"messy bun, chopstick hairpin, loose tendrils"},
-{c:"hair",t:"H8 編髮花冠",k:"화관 땋은머리",p:"braided crown, flower woven in braid"},
+{c:"hair",t:"H8 編髮花冠",k:"화관 땋은머리",p:"braided crown, flower woven in braid",n:"也可嘗試用 crown braid, 代替"},
 {c:"hair",t:"H9 雙麻花辮",k:"양갈래 땋은머리",p:"low twin braids, over shoulders"},
 {c:"hair",t:"H10 男士油頭剃邊",k:"포마드 언더컷",p:"undercut, slicked back top"},
 {c:"hair",t:"H11 慵懶亂髮",k:"나른한 헝클헤어",p:"tousled messy short hair, bedhead style"},
