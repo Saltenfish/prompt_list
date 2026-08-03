@@ -25,7 +25,7 @@ window.PROMPT_DATA.push(
 {c:"hair",t:"H16 微亂狼尾",k:"러프 울프컷",p:"fluffy layered wolf cut, fluffy layered wolf cut ends, messy wolf cut, tousled layered cut, side ponytail with wolf cut"},
 {c:"hair",t:"H17 長髮雙馬尾",k:"롱 트윈테일",p:"twin tails tied with butterfly-shaped ribbons, long twin tails, soft twin tails",n:"搭配 F51 音樂盒哥德蘿莉"},
 {c:"hair",t:"H18 側撥馬尾",k:"사이드 포니테일",p:"side ponytail, hair swept to one side, single side ponytail"},
-{c:"hair",t:"H19 齊瀏海包子頭",k:"일자앞머리 번헤어",p:"short black hair, bob cut, neat fringe, classic clean bob",n:"搭配 S22 水墨雙色系"},
+{c:"hair",t:"H19 齊瀏海鮑伯頭",k:"일자뱅 보브컷",p:"short black hair, bob cut, neat fringe, classic clean bob",n:"搭配 S22 水墨雙色系"},
 {c:"hair",t:"H20 飄逸長發",k:"찰랑이는 긴머리",p:"long flowing hair, hair billowing in wind, dynamic flowing hair, windswept long hair, hair blowing freely"},
 {c:"hair",t:"H21 短雙馬尾",k:"숏 트윈테일",p:"short twin tails, small stubby pigtails, cheerful bouncy tufts, energetic silhouette",n:"與 H17 長髮雙馬尾成對：短/長版本"},
 /* ---- 髮色（haircolor｜HC1–HC17（原HC16與HC1重複已刪、後續編號前移），新增從 HC18 續編）---- */

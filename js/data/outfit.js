@@ -312,7 +312,7 @@ window.PROMPT_DATA.push(
 {c:"top_f",t:"FT8 無袖高領針織",k:"민소매 터틀넥 니트",p:"turtleneck sleeveless knit, fitted silhouette"},
 {c:"top_f",t:"FT9 水手領上衣",k:"세일러카라 톱",p:"sailor collar blouse, ribbon tie, puffed sleeves"},
 {c:"top_f",t:"FT10 蕾絲內搭開衫",k:"레이스 이너+가디건",p:"lace bralette top layered under open cardigan"},
-{c:"top_f",t:"FT11 粉紅草莓洋裝頂",k:"핑크 딸기 드레스톱",p:"white frilled dress, lace trimmings, large red ribbon accessory, pearl string, white flower decorations, hair bow"},
+{c:"top_f",t:"FT11 蝴蝶結白衫",k:"리본이 달린 흰 셔츠",p:"white frilled dress, lace trimmings, large red ribbon accessory, pearl string, white flower decorations, hair bow"},
 {c:"top_f",t:"FT12 透膚蕾絲上衣",k:"시스루 레이스 톱",p:"black long robe outer, see-through robe, layered lace trim, white lace, layered ruffles, white ribbon, white bow, grey embroidery",n:"分支：black ribbon variant（黑蝴蝶結版）"},
 {c:"top_f",t:"FT13 白色露肩罩衫",k:"화이트 오프숄더 블라우스",p:"white linen off-shoulder top, flowing loosely, thin gold necklace, small hoop earrings, light sun-kissed skin tone"},
 {c:"top_f",t:"FT14 Polo 風無袖上衣",k:"민소매 폴로 톱",p:"white sleeveless t-shirt, silver necklace"},
