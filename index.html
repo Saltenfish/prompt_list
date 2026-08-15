@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prompt Atelier · PixAI 素材庫</title>
+<title>Prompt Atelier 提示詞素材庫</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
@@ -52,6 +52,7 @@ button{font-family:inherit}
   padding:14px 20px 6px;
 }
 #band h1{font-family:"Noto Serif TC",serif;font-size:20px;font-weight:700;letter-spacing:.08em}
+#band h1 .brand-zh{font-size:16px;font-weight:600;letter-spacing:.06em;margin-left:6px;opacity:.92}
 #band .eyebrow{
   font-family:"JetBrains Mono",monospace;font-style:italic;
   font-size:11px;letter-spacing:.22em;opacity:.85;flex:1;
@@ -79,6 +80,24 @@ button{font-family:inherit}
 .gtab.on::after{
   content:"";position:absolute;left:14px;right:14px;bottom:0;height:3px;
   background:var(--c5);border-radius:3px 3px 0 0;
+}
+/* 聲明教學&贊助商：樣式與其他標籤相同，只在前後各加一條白色 | */
+.gtab.gspacer{margin-left:26px}
+.gtab.gtab-info{margin-right:14px}
+.gtab.gtab-info::before{
+  content:"";position:absolute;left:-13px;top:50%;transform:translateY(-50%);
+  width:2px;height:16px;background:#fff;border-radius:2px;opacity:.85;
+}
+.gtab.gtab-info::after{
+  /* 未選中時：右側白色分隔線 */
+  content:"";position:absolute;right:-8px;top:50%;transform:translateY(-50%);
+  width:2px;height:16px;background:#fff;border-radius:2px;opacity:.85;
+  left:auto;bottom:auto;
+}
+/* 選中時：底線蓋掉右分隔線的位置，改回一般 on 樣式的底線 */
+.gtab.gtab-info.on::after{
+  content:"";position:absolute;left:14px;right:14px;bottom:0;top:auto;transform:none;
+  width:auto;height:3px;background:var(--c5);border-radius:3px 3px 0 0;opacity:1;
 }
 
 /* ============ 搜尋列 ============ */
@@ -319,6 +338,10 @@ main{flex:1;min-width:0}
 }
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+/* ============ 聲明教學&贊助商 頁面（內容直接注入，非 iframe）============ */
+#infopage{display:none;max-width:1000px;margin:0 auto;padding:8px 20px 40px}
+#infopage.show{display:block}
+
 /* ============ RWD ============ */
 @media(max-width:900px){
   #sidebar{display:none}
@@ -334,7 +357,7 @@ main{flex:1;min-width:0}
 
 <div id="band">
   <div class="brandrow">
-    <h1>Prompt 素材庫</h1>
+    <h1>Prompt Atelier <span class="brand-zh">提示詞素材庫</span></h1>
     <span class="eyebrow">The Atelier — Prompt Collection</span>
     <button class="bandbtn" id="openAdd">＋ 新增</button>
   </div>
@@ -357,6 +380,14 @@ main{flex:1;min-width:0}
     <div id="list"></div>
   </main>
 </div>
+
+<!-- ============================================================
+     📢 聲明教學&贊助商 頁面
+     內容獨立在 info.html（純內容片段），由下方 JS 直接注入這裡，
+     與主站共用同一個滾動與排版，浮動籃子照常顯示。
+     日後只要改 info.html 即可更新，不必動這個檔。
+============================================================ -->
+<div id="infopage"></div>
 
 <button id="comfab" title="組合工作檯">🧺<span class="nbadge" id="comcount">0</span></button>
 
@@ -415,6 +446,29 @@ main{flex:1;min-width:0}
   </div>
 </div>
 
+<script>
+/* 載入 info.html（純內容片段）並直接注入 #infopage，只載一次。
+   用 file:// 直接開啟時 fetch 可能被瀏覽器擋，這時顯示提示訊息。 */
+window.__infoLoaded=false;
+window.loadInfoPage=function(){
+  if(window.__infoLoaded)return;
+  var box=document.querySelector("#infopage");
+  fetch("info.html").then(function(r){return r.text()}).then(function(html){
+    box.innerHTML=html;window.__infoLoaded=true;
+    /* innerHTML 不會執行 <script>，手動重建並執行片段內的腳本 */
+    box.querySelectorAll("script").forEach(function(old){
+      var s=document.createElement("script");
+      if(old.src)s.src=old.src;else s.textContent=old.textContent;
+      old.parentNode.replaceChild(s,old);
+    });
+  }).catch(function(){
+    box.innerHTML='<div style="padding:40px;text-align:center;color:#8A94A6;line-height:2">'+
+      '此頁內容存放在 <b>info.html</b>，需透過網站伺服器開啟才能載入。<br>'+
+      '（若你是直接用 file:// 雙擊開啟，瀏覽器會擋住載入；實際部署後即正常。）</div>';
+    window.__infoLoaded=true;
+  });
+};
+</script>
 <div id="lightbox"><img id="lightimg" alt=""></div>
 <div id="toast"></div>
 
@@ -464,12 +518,13 @@ const CATS = {
 const GROUPS = [
   {id:"all",   l:"全部"},
   {id:"fav",   l:"⭐ 收藏"},
+  {id:"info",  l:"聲明教學&贊助商", info:true},
+  {id:"art",   l:"畫風版面"},
   {id:"char",  l:"人物特徵"},
   {id:"outfit",l:"服飾"},
   {id:"act",   l:"表情動作"},
-  {id:"scene", l:"場景氛圍"},
   {id:"cam",   l:"鏡頭"},
-  {id:"art",   l:"畫風版面"},
+  {id:"scene", l:"場景氛圍"},
 ];
 const SUBJECTS = ["1girl","1boy","1boy, 1girl, couple","2girls","2boys","無主體"];
 /* 隨機抽取的預設類別；couple 主體時以 couple 取代 pose */
@@ -514,7 +569,7 @@ function codeOf(it){return it.t.split(" ")[0]}
 /* ============ 導覽渲染 ============ */
 function renderNav(){
   $("#groupbar").innerHTML=GROUPS.map(g=>
-    `<div class="gtab ${state.group===g.id?"on":""}" data-g="${g.id}">${g.l}</div>`).join("");
+    `<div class="gtab ${g.info?"gtab-info":""} ${g.info?"gspacer":""} ${state.group===g.id?"on":""}" data-g="${g.id}">${g.l}</div>`).join("");
   const cats=Object.entries(CATS).filter(([id,c])=>state.group==="all"||c.g===state.group);
   const counts={};DATA.forEach(d=>counts[d.c]=(counts[d.c]||0)+1);
   /* 桌面側欄：依大類分段 */
@@ -702,8 +757,18 @@ function saveCustomList(){
 /* ============ 事件 ============ */
 $("#groupbar").addEventListener("click",e=>{
   const g=e.target.dataset.g;if(!g)return;
-  state.group=g;state.cat=null;renderNav();renderList();
+  state.group=g;state.cat=null;renderNav();applyView();renderList();
 });
+/* 切換「聲明教學&贊助商」頁面 與 一般卡片檢視 */
+function applyView(){
+  const isInfo=state.group==="info";
+  $("#infopage").classList.toggle("show",isInfo);
+  $("#wrap").style.display=isInfo?"none":"";
+  $("#searchrow").style.display=isInfo?"none":"";
+  $("#catbar").style.display=isInfo?"none":"";
+  /* 浮動籃子在聲明頁照常顯示（教學會用到它） */
+  if(isInfo){window.loadInfoPage&&window.loadInfoPage();window.scrollTo({top:0,behavior:"smooth"})}
+}
 document.addEventListener("click",e=>{
   const c=e.target.closest("[data-c]");
   if(c&&(c.classList.contains("sb-item")||c.classList.contains("chip"))){
@@ -820,7 +885,12 @@ window.initApp=function(){
     state.fav=new Set(f);
   }catch(e){}
   loadRandCats();
-  renderNav();renderList();renderComposer();renderFilter();
+  /* 第一次造訪：自動切到「聲明教學&贊助商」整頁；之後預設停在「全部」 */
+  if(!lsGet("pp_seen_info")){
+    state.group="info";
+    lsSet("pp_seen_info","1");
+  }
+  renderNav();applyView();renderList();renderComposer();renderFilter();
 };
 </script>
 
