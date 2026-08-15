@@ -885,10 +885,14 @@ window.initApp=function(){
     state.fav=new Set(f);
   }catch(e){}
   loadRandCats();
-  /* 第一次造訪：自動切到「聲明教學&贊助商」整頁；之後預設停在「全部」 */
-  if(!lsGet("pp_seen_info")){
+  /* 依「已看過的聲明頁版本」決定是否強制跳轉：
+     - 全新訪客：沒有紀錄 → 跳轉
+     - 老用戶（看過舊版）：存的版本 < 目前版本 → 也強制跳轉一次
+     日後聲明頁大改版、想再讓所有人看一次，只要把 INFO_VERSION +1 即可。 */
+  const INFO_VERSION="2";
+  if(lsGet("pp_seen_info_ver")!==INFO_VERSION){
     state.group="info";
-    lsSet("pp_seen_info","1");
+    lsSet("pp_seen_info_ver",INFO_VERSION);
   }
   renderNav();applyView();renderList();renderComposer();renderFilter();
 };
