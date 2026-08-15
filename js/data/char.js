@@ -6,7 +6,7 @@
    本檔分類：hair=髮型(前綴H) haircolor=髮色(前綴HC) eyes=眼睛(前綴EY) race=種族特徵(前綴R)
 ============================================================ */
 window.PROMPT_DATA.push(
-/* ---- 髮型（hair｜H1–H21，新增從 H22 續編）---- */
+/* ---- 髮型（hair｜H1–H40，新增從 H41 續編）---- */
 {c:"hair",t:"H1 狼尾剪",k:"울프컷",p:"wolf cut hairstyle, fluffy layered ends"},
 {c:"hair",t:"H2 公主切",k:"히메컷",p:"long straight hair, hime cut, blunt bangs"},
 {c:"hair",t:"H3 高雙馬尾",k:"하이 트윈테일",p:"high twin tails, ribbon ties"},
@@ -28,6 +28,25 @@ window.PROMPT_DATA.push(
 {c:"hair",t:"H19 齊瀏海鮑伯頭",k:"일자뱅 보브컷",p:"short black hair, bob cut, neat fringe, classic clean bob",n:"搭配 S22 水墨雙色系"},
 {c:"hair",t:"H20 飄逸長發",k:"찰랑이는 긴머리",p:"long flowing hair, hair billowing in wind, dynamic flowing hair, windswept long hair, hair blowing freely"},
 {c:"hair",t:"H21 短雙馬尾",k:"숏 트윈테일",p:"short twin tails, small stubby pigtails, cheerful bouncy tufts, energetic silhouette",n:"與 H17 長髮雙馬尾成對：短/長版本"},
+{c:"hair",t:"H22 韓系空氣瀏海",k:"코마머리 시스루뱅",p:"korean see-through bangs, soft airy fringe, natural volume top, neat short cut"},
+{c:"hair",t:"H23 兩側漸層寸頭",k:"투블럭 컷",p:"two block cut, short faded sides, textured longer top, clean tapered undercut"},
+{c:"hair",t:"H24 中分垂簾",k:"가르마 커튼머리",p:"center parted hair, curtain bangs framing forehead, soft fringe falling on both sides"},
+{c:"hair",t:"H25 復古油頭全梳",k:"올백 포마드",p:"slicked back hair, all-back pompadour, glossy combed top, retro gentleman style"},
+{c:"hair",t:"H26 男短捲毛",k:"남자 곱슬 단발",p:"short curly hair, soft natural curls, tousled boyish texture, fluffy volume"},
+{c:"hair",t:"H27 微亂刺蝟短髮",k:"까슬한 숏컷",p:"messy spiky short hair, choppy layered ends, casual bedhead texture"},
+{c:"hair",t:"H28 側分油頭紳士",k:"사이드파트 젠틀맨",p:"side parted hair, neat combed top, undercut sides, dapper classic style"},
+{c:"hair",t:"H29 男中長披肩",k:"남자 중장발",p:"medium long hair on men, hair reaching shoulders, loose relaxed strands, effortless flow"},
+{c:"hair",t:"H30 高馬尾武士束",k:"남자 하이 포니테일",p:"male high ponytail, hair tied up at back, samurai top knot vibe, few loose strands at temples"},
+{c:"hair",t:"H31 遮眼厚瀏海",k:"눈 가린 앞머리",p:"long heavy bangs covering one eye, straight fringe over forehead, moody hidden gaze"},
+{c:"hair",t:"H32 狼尾中長男版",k:"남자 울프컷",p:"male wolf cut, layered mullet ends, textured nape length, edgy fluffy silhouette"},
+{c:"hair",t:"H33 全剃莫西干",k:"모히칸 컷",p:"mohawk hairstyle, shaved sides, strip of raised hair, bold punk crest"},
+{c:"hair",t:"H34 圓寸極短",k:"짧은 스포츠머리",p:"buzz cut, very short cropped hair, clean shaven sides, sporty minimal look"},
+{c:"hair",t:"H35 男後綁小辮",k:"남자 하프 묶음",p:"half tied back hair on men, small low knot, few strands loose at front, relaxed masculine style"},
+{c:"hair",t:"H36 慵懶中分長瀏海",k:"내추럴 가르마",p:"loose center part, long soft bangs, relaxed natural fall, effortless idol look"},
+{c:"hair",t:"H37 男髒辮",k:"남자 드레드",p:"dreadlocks on men, thick twisted locks, tied back or loose, streetwear vibe"},
+{c:"hair",t:"H38 側鏟斜瀏海",k:"사이드 언더컷",p:"undercut with swept side fringe, shaved one side, long angled bangs across forehead, sharp asymmetric cut"},
+{c:"hair",t:"H39 男丸子頭",k:"남자 상투 번",p:"man bun, top knot tied high, shaved or short sides, casual loose strands"},
+{c:"hair",t:"H40 貴公子波浪中長",k:"귀공자 웨이브",p:"wavy medium hair on men, soft flowing waves, elegant loose curls, refined noble prince style"},
 /* ---- 髮色（haircolor｜HC1–HC17（原HC16與HC1重複已刪、後續編號前移），新增從 HC18 續編）---- */
 {c:"haircolor",t:"HC1 深黑藍綠＋白挑染",k:"딥 틸블랙+흰 브릿지",p:"deep black blue-green hair, deep ocean teal hair, with white streaks",n:"疊寫近義色標籤可強化特徵"},
 {c:"haircolor",t:"HC2 銀白",k:"실버 화이트",p:"silver white hair, pale shimmer"},
