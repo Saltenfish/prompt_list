@@ -355,7 +355,7 @@ main{flex:1;min-width:0}
   #wrap{padding:8px 16px 90px;gap:0}
   #list{grid-template-columns:1fr}
   #searchrow{padding:12px 16px 0}
-  .card .body{overflow:visible;align-items:flex-start}
+  .card .body{overflow:visible;align-items:flex-start;min-height:66px}
   .prompt{min-width:0}
 }
 /* ---- 手機（窄螢幕）：頂部品牌列不換行、字級縮小 ---- */
@@ -671,7 +671,7 @@ const thumbIO=("IntersectionObserver" in window)?new IntersectionObserver(ens=>{
     const img=en.target.querySelector(".thumb");
     if(img)loadThumb(img);
   });
-},{rootMargin:"400px 0px"}):null;
+},{rootMargin:"800px 0px"}):null;
 function hydrateThumbs(){
   document.querySelectorAll("#list .thumb").forEach(img=>{
     const v=IMG_CACHE[img.dataset.code];
