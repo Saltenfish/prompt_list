@@ -188,7 +188,8 @@ main{flex:1;min-width:0}
 .card.open .prompt{-webkit-line-clamp:unset}
 .thumb{
   flex:0 0 66px;width:66px;border-radius:9px;object-fit:cover;
-  border:1px solid var(--line);cursor:zoom-in;display:block;
+  border:1px solid var(--line);cursor:zoom-in;
+  display:none;align-self:flex-start;
 }
 .thumb.loaded{display:block}
 .card h3 .ko{font-size:.78em;font-weight:400;opacity:.55;margin-left:.35em}
@@ -354,7 +355,7 @@ main{flex:1;min-width:0}
   #wrap{padding:8px 16px 90px;gap:0}
   #list{grid-template-columns:1fr}
   #searchrow{padding:12px 16px 0}
-  .card .body{overflow:visible}
+  .card .body{overflow:visible;align-items:flex-start}
   .prompt{min-width:0}
 }
 /* ---- 手機（窄螢幕）：頂部品牌列不換行、字級縮小 ---- */
