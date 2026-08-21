@@ -160,7 +160,7 @@ main{flex:1;min-width:0}
 #list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .card{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:13px 14px;transition:box-shadow .15s;
+  padding:13px 14px;transition:box-shadow .15s;overflow:hidden;
 }
 .card:hover{box-shadow:0 3px 14px rgba(128,155,206,.10)}
 .card .hd{display:flex;align-items:center;gap:8px}
@@ -190,6 +190,7 @@ main{flex:1;min-width:0}
   flex:0 0 66px;width:66px;border-radius:9px;object-fit:cover;
   border:1px solid var(--line);cursor:zoom-in;
   display:none;align-self:flex-start;
+  min-width:0;overflow:hidden;
 }
 .thumb.loaded{display:block}
 .card h3 .ko{font-size:.78em;font-weight:400;opacity:.55;margin-left:.35em}
