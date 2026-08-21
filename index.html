@@ -32,11 +32,16 @@
   --band-ink:#F4F8F6;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{overflow-x:hidden}
 body{
   background:var(--bg);color:var(--ink);
   font-family:"Noto Sans TC",-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
   font-size:15px;line-height:1.6;
+  overflow-x:hidden;max-width:100%;
 }
+/* 橫向捲動列鎖在視窗內，避免撐寬整頁造成破圖 */
+#band,#groupbar,#searchrow,#catbar,#wrap,#infopage{max-width:100%}
+#groupbar,#catbar{width:100%}
 button{font-family:inherit}
 .mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
 
@@ -349,6 +354,25 @@ main{flex:1;min-width:0}
   #wrap{padding:8px 16px 90px;gap:0}
   #list{grid-template-columns:1fr}
   #searchrow{padding:12px 16px 0}
+}
+/* ---- 手機（窄螢幕）：頂部品牌列不換行、字級縮小 ---- */
+@media(max-width:560px){
+  #band .brandrow{gap:10px;padding:12px 16px 4px;flex-wrap:nowrap}
+  #band h1{font-size:17px;letter-spacing:.04em;white-space:nowrap;flex:0 0 auto}
+  #band h1 .brand-zh{font-size:12.5px;margin-left:5px;display:inline-block}
+  #band .eyebrow{display:none}            /* 英文副標在手機隱藏，省空間 */
+  #band .bandbtn{margin-left:auto;padding:5px 12px;font-size:12px}
+  #groupbar{padding:2px 10px 0}
+  .gtab{padding:9px 12px 11px;font-size:12.5px;letter-spacing:.04em}
+  .gtab.gspacer{margin-left:20px}
+  #searchrow{padding:12px 14px 0}
+  .searchbox input{font-size:13.5px}
+}
+/* ---- 更窄（<380px）：品牌中文副標也收起，只留主標 ---- */
+@media(max-width:380px){
+  #band h1{font-size:16px}
+  #band h1 .brand-zh{font-size:11.5px}
+  #band .bandbtn{padding:5px 10px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -758,6 +782,7 @@ function saveCustomList(){
 $("#groupbar").addEventListener("click",e=>{
   const g=e.target.dataset.g;if(!g)return;
   state.group=g;state.cat=null;renderNav();applyView();renderList();
+  if(g!=="info")window.scrollTo({top:0,behavior:"smooth"});
 });
 /* 切換「聲明教學&贊助商」頁面 與 一般卡片檢視 */
 function applyView(){
@@ -895,6 +920,10 @@ window.initApp=function(){
     lsSet("pp_seen_info_ver",INFO_VERSION);
   }
   renderNav();applyView();renderList();renderComposer();renderFilter();
+  /* 一進網站回到最頂（HC1）：關閉瀏覽器記憶捲動位置，並歸零 */
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  window.scrollTo(0,0);
+  setTimeout(function(){window.scrollTo(0,0);},60);   /* 等版面渲染完再歸零一次，保險 */
 };
 </script>
 
