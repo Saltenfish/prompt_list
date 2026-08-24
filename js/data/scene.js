@@ -137,6 +137,7 @@ window.PROMPT_DATA.push(
 {c:"location",t:"L128 機場停機坪",k:"공항 활주로",p:"outdoors, airport tarmac at dusk, private jet parked with open stairway, runway lights glowing in rows, orange-purple gradient sky, control tower silhouette, wind on open asphalt, glamorous departure atmosphere"},
 {c:"location",t:"L129 沙漠公路",k:"사막 하이웨이",p:"outdoors, endless desert highway, straight asphalt road to horizon, yellow center line, red rock mesas in distance, vast clear blue sky, heat haze shimmering, lone road sign, cinematic americana road trip vibe"},
 {c:"location",t:"L130 乾涸泳池",k:"빈 수영장",p:"outdoors, empty drained swimming pool, faded blue tiled walls, pool ladder and depth markings, fallen leaves in corners, strong sunlight and sharp shadows, cracked poolside concrete, surreal youth concept photo atmosphere"},
+{c:"location", t:"L131 昏暗溫馨客廳", k:"어둑한 아늑한 거실", p:"indoors, cozy living room, leather sofa, dim lighting, warm lighting, soft ambient light, homey atmosphere, low light"},
 /* ---- 元素（element｜E1–E38，新增從 E39 續編）---- */
 {c:"element",t:"E1 蝴蝶系",k:"나비",p:"colorful butterflies flying, blue morpho butterfly, white butterflies, glowing butterfly wings, butterflies landing on hair, butterfly swarm trail",n:"分支：golden butterflies（金蝶）｜crystal butterflies（水晶蝶）｜black butterflies（黑蝶暗黑向）"},
 {c:"element",t:"E2 花瓣飄落系",k:"흩날리는 꽃잎",p:"falling petals, cherry blossom petals drifting, rose petals scattered in air, petals swirling in wind, petals on ground, petal storm",n:"分支：red rose petals（紅玫瑰）｜white petals（純白）｜golden ginkgo leaves（銀杏）｜autumn maple leaves（楓葉）"},

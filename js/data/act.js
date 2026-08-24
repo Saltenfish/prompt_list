@@ -294,7 +294,7 @@ window.PROMPT_DATA.push(
 {c:"couple",t:"C62 淡水曙光",k:"단수이 새벽빛",p:"couple, 2people, underwater, submerged, deep blue water, bubbles, sunbeams, light rays, water distortion, floating hair, floating clothes, wet, holding each other, hugging, cinematic lighting, ethereal magical atmosphere"},
 {c:"couple",t:"C63 火焰細框雙人",k:"불꽃 프레임 듀오",p:"couple, 2people, (very thin frame within a frame, ornate burning [color] flame thin frame:1.5), window sill, scattered [color] rose petals, dark background, dramatic lighting, gothic, surreal, highly detailed, touching other",n:"單人版見 D63"},
 {c:"couple",t:"C64 疊框側吻",k:"겹프레임 사이드 키스",p:"couple, 2people, profile view, (both characters in profile:1.5), (visible kiss, lips touching:1.5), upper body, medium close-up, matching casual outfits, (full side profile:1.5), (eyes closed:1.4), (heavy blush:1.8), (hand covering partner's eyes:1.5), moonlit atmosphere, dreamy"},
-{c:"couple",t:"C65 教堂玫瑰窗吻",k:"장미창 아래 키스",p:"couple, 2people, grand cathedral interior, stained glass windows, soft romantic lighting, warm atmosphere, cinematic composition, upper body, gentle expressions"},
+{c:"couple",t:"C65 教堂玫瑰窗吻",k:"장미창 아래 키스",p:"couple, 2people, kiss, grand cathedral interior, stained glass windows, soft romantic lighting, warm atmosphere, cinematic composition, upper body, gentle expressions"},
 {c:"couple",t:"C66 飛撲擁抱",k:"와락 달려들어 안기",p:"couple, glomp, one leaping into the other with open arms, staggered catch, joyful collision hug"},
 {c:"couple",t:"C67 正面環腰抱",k:"허리 감싸 안기",p:"couple, waist hug, arms wrapped around partner waist from the front, faces close, warm chest-to-chest closeness"},
 {c:"couple",t:"C68 即將擁抱",k:"포옹 직전",p:"couple, imminent hug, arms opening toward each other, one step apart, breath-held anticipation moment"},
@@ -305,5 +305,10 @@ window.PROMPT_DATA.push(
 {c:"couple",t:"C73 鼻尖相觸",k:"코끝 맞대기",p:"couple, noses touching, eyes locked at breath distance, suspended tender pause"},
 {c:"couple",t:"C74 頭倚胸口",k:"가슴에 기대기",p:"couple, head resting against partner chest, listening to heartbeat, protective arm wrapped around"},
 {c:"couple",t:"C75 墊腳之吻",k:"까치발 키스",p:"couple, tiptoe kiss, one rising on tiptoes to reach the other, height difference sweetness"},
-{c:"couple",t:"C76 挽臂依偎",k:"팔에 매달려 걷기",p:"couple, arm hug, clinging to partner arm with both hands, leaning close while strolling",n:"與 C71 勾臂同行差異：本條更緊貼撒嬌"}
+{c:"couple",t:"C76 挽臂依偎",k:"팔에 매달려 걷기",p:"couple, arm hug, clinging to partner arm with both hands, leaning close while strolling",n:"與 C71 勾臂同行差異：本條更緊貼撒嬌"},
+{c:"couple",t:"C77 吻手禮",k:"손등 키스",p:"couple, (kissing hand:1.3), (hand kiss:1.3), (man kneeling on one knee:1.4), (down on one knee:1.3), (boy holding girl's hand:1.2), (bringing hand to lips:1.2),"},
+{c:"couple",t:"C78 跨坐對視", k:"무릎 위 마주보기",p:"couple, sitting on lap, straddling, leaning forward, hands on partner's shoulders, face to face, intimate distance, eye contact, hetero"},
+{c:"couple",t:"C79 環腰扶坐",k:"허리 감싸 앉기",p:"couple, sitting on sofa, one holding the other's waist, arm around waist, eye contact, close together, hetero"},
+{c:"couple",t:"C80 跨坐環腰對視",k:"무릎 위에서 허리 감싸 마주보기",p:"couple, one sitting on the other's lap, straddling, leaning forward, hands on partner's shoulders, the other holding partner's waist, arm around waist, face to face, intimate distance, eye contact, close together, hetero", n:"C78, C79 結合款"},
+
 );
