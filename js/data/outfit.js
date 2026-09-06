@@ -6,7 +6,7 @@
    本檔分類：outfit_m=男套裝(前綴M) outfit_f=女套裝(前綴F) outfit_u=中性套裝(前綴U) top_m=男上裝(前綴MT) bottom_m=男下裝(前綴MB) top_f=女上裝(前綴FT) bottom_f=女下裝(前綴FB) accessory=飾品(前綴A)
 ============================================================ */
 window.PROMPT_DATA.push(
-/* ---- 男套裝（outfit_m｜M1–M70，新增從 M71 續編）---- */
+/* ---- 男套裝（outfit_m｜M1–M75，新增從 M76 續編）---- */
 {c:"outfit_m",t:"M1 韓系霸總西裝",k:"한국식 재벌 수트",p:"black tailored three-piece suit, crisp white dress shirt, silk necktie, silver tie clip, luxury wristwatch, polished leather shoes, cufflinks, slicked back styling, elegant CEO attire, fitted blazer"},
 {c:"outfit_m",t:"M2 街頭潮流",k:"스트릿 패션",p:"oversized graphic hoodie, layered longline tee, cargo pants with straps, chunky high-top sneakers, crossbody bag, silver chain necklace, snapback cap, ear piercings, layered bracelets, streetwear aesthetic"},
 {c:"outfit_m",t:"M3 黑暗奇幻騎士",k:"다크 판타지 기사",p:"black ornate plate armor, silver engraved pauldrons, tattered dark cape, leather gauntlets, chainmail underlayer, sword sheath at hip, glowing rune details, high collar armor, battle-worn texture, dark knight attire"},
@@ -77,7 +77,12 @@ window.PROMPT_DATA.push(
 {c:"outfit_m",t:"M68 午夜藍絲絨禮服",k:"미드나잇 벨벳 수트",p:"midnight blue velvet suit, satin peak lapels, crisp white dress shirt, black silk bow tie, jeweled brooch on lapel, tailored slim trousers, patent leather shoes, award ceremony elegance, refined red carpet styling"},
 {c:"outfit_m",t:"M69 機場時尚私服",k:"공항패션 남자",p:"airport fashion look, oversized beige trench coat, layered hoodie underneath, wide-leg trousers, chunky sneakers, crossbody bag, bucket hat low over eyes, face mask pulled down, effortless celebrity off-duty styling"},
 {c:"outfit_m",t:"M70 球衣運動打歌服",k:"저지 스포티 무대의상",p:"sporty jersey stage outfit, oversized mesh soccer jersey with bold number print, layered long sleeve underneath, track pants with side stripes, chunky high-top sneakers, sweatband on wrist, lanyard chain accent, energetic street sports concept"},
-/* ---- 女套裝（outfit_f｜F1–F120，新增從 F121 續編）---- */
+{c:"outfit_m", t:"M71 玄袍道長", k:"", p:"black taoist robe, wide sleeves, crossed collar, embroidered eight trigrams, flowing sash, layered inner robe, long fabric belt, ink-black fabric, ancient chinese clothing, hanfu based robe", n:"分支：midnight blue（墨藍）｜deep purple（玄紫）"},
+{c:"outfit_m", t:"M72 白衣仙師", k:"", p:"white taoist robe, long flowing sleeves, silver trim, crossed collar, jade belt hook, layered white hanfu, cloud pattern embroidery, immortal cultivator outfit, elegant drapery", n:"分支：pale gold trim（淡金滾邊）"},
+{c:"outfit_m", t:"M73 茅山法師", k:"", p:"yellow taoist priest robe, red talisman patterns, wide sleeves, black cloth belt, layered ritual garment, mystic symbols, exorcist attire, traditional chinese ritual clothing", n:"分支：crimson robe（朱紅法袍）"},
+{c:"outfit_m", t:"M74 青雲門人", k:"", p:"azure taoist robe, dark blue sash, crossed collar, wide sleeves, cloud embroidery, layered under-robe, sword tassel at waist, cultivator sect outfit, immortal style hanfu", n:""},
+{c:"outfit_m", t:"M75 落魄游方道士", k:"", p:"tattered grey taoist robe, worn fabric, loose sash, patched sleeves, simple cloth belt, dusty travel-worn robe, wandering priest attire, humble hanfu, frayed hem", n:"分支：straw cape（蓑衣加披）"},
+/* ---- 女套裝（outfit_f｜F1–F125，新增從 F126 續編）---- */
 {c:"outfit_f",t:"F1 水晶晚禮服",k:"크리스탈 이브닝드레스",p:"crystal-embellished evening gown, off-shoulder neckline, flowing chiffon train, glittering bodice, long silk gloves, diamond earrings, delicate necklace, high heels, sparkling fabric, red carpet elegance"},
 {c:"outfit_f",t:"F2 Y2K 辣妹",k:"Y2K 갸루",p:"cropped baby tee, oversized track jacket, low-rise cargo skirt, leg warmers, chunky platform boots, studded belt, butterfly hair clips, ribbon choker, layered silver chains, tinted sunglasses, y2k fashion"},
 {c:"outfit_f",t:"F3 甜美洛麗塔",k:"스위트 로리타",p:"pastel pink lolita dress, layered lace petticoat, puffy short sleeves, ribbon bows, frilled headdress, white knee-high socks, mary jane shoes, lace gloves, heart-shaped handbag, sweet lolita fashion"},
@@ -198,6 +203,11 @@ window.PROMPT_DATA.push(
 {c:"outfit_f",t:"F118 老錢風高爾夫裝",k:"올드머니 골프룩",p:"old money golf outfit, cream cable-knit vest over white polo shirt, pleated tennis-style midi skirt, ribbon belt, visor cap, ankle socks with golf shoes, pearl stud accents, quiet luxury sporty elegance"},
 {c:"outfit_f",t:"F119 練習室舞蹈服",k:"연습실 댄스복",p:"dance practice outfit, oversized tee knotted at waist, sports bra peeking out, loose grey sweatpants rolled at ankle, leg warmers, scuffed dance sneakers, towel around neck, sweat-glow practice room realism",n:"搭配 L106 舞蹈練習室場景"},
 {c:"outfit_f",t:"F120 紅毯緞面禮服",k:"레드카펫 새틴 드레스",p:"champagne satin column gown, draped cowl neckline, floor-length sleek silhouette, thigh-high side slit, long opera gloves, sparkling drop earrings, elegant clutch bag, strappy heels, award night red carpet glamour"},
+{c:"outfit_f", t:"F121 女冠道姑", k:"", p:"female taoist robe, white and blue layered hanfu, wide sleeves, crossed collar, flowing sash, jade hairpin belt, elegant drapery, immortal priestess outfit, cloud pattern embroidery", n:"分支：all white（純白女冠）"},
+{c:"outfit_f", t:"F122 朱砂法袍", k:"", p:"red female taoist robe, vermilion talisman patterns, wide sleeves, black sash, layered ritual dress, mystic symbols, exorcist priestess attire, flowing chinese robe", n:""},
+{c:"outfit_f", t:"F123 青丘仙姬", k:"", p:"pale green taoist robe, flowing chiffon sleeves, silver waist chain, layered hanfu skirt, cloud embroidery, ethereal immortal dress, elegant drapery, cultivator outfit", n:"分支：lavender（淡紫仙姬）"},
+{c:"outfit_f", t:"F124 玄女墨袍", k:"", p:"black female taoist robe, gold eight trigrams embroidery, wide sleeves, red inner lining, layered dark hanfu, ornate sash, mysterious priestess attire, elegant flowing fabric", n:""},
+{c:"outfit_f", t:"F125 素衣道童女", k:"", p:"simple white taoist robe, short crossed collar top, cloth belt, loose trousers under robe, plain fabric, young disciple attire, humble hanfu, practical ritual clothing", n:"分支：pale blue（淡藍道童）"},
 /* ---- 中性套裝（outfit_u｜U1–U20，新增從 U21 續編）---- */
 {c:"outfit_u",t:"U1 中性水手服（褲裝）",k:"젠더리스 세일러복(팬츠)",p:"marine lolita, navy blue sailor shirt, navy blue sailor shorts, sailor collar, short puff sleeves, white trim"},
 {c:"outfit_u",t:"U2 末世中性長風衣",k:"아포칼립스 롱코트",p:"wearing unisex post-apocalyptic stylish outfit, elegant dystopian fashion, long [coat color] asymmetrical coat with frayed edges and silver buckles, layered [shirt color] shirts and scarves, [harness color] leather straps and harness over chest, slim [pants color] pants with knee pads, sturdy fashionable boots, subtle gas mask elements hanging from neck, detailed textures, beautiful androgynous look"},
